@@ -538,4 +538,17 @@ class MockWorkbenchPage implements IWorkbenchPage {
 	public IMemento[] getEditorState(IEditorReference[] editorRefs) {
 		throw new AssertionFailedError("Methods in MockWorkbenchPage should not be called");
 	}
+
+	@Override
+	public IEditorReference[] openEditors(IEditorInput[] inputs, String[] editorIDs, IMemento[] mementos,
+			int matchFlags, int activateIndex) throws MultiPartInitException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public IMemento[] getEditorState(IEditorReference[] editorRefs, boolean includeInputState) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
